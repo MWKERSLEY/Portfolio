@@ -1,0 +1,97 @@
+#home {
+    min-height: 100vh;
+    /*background-image: url();*/
+    width:100%;
+    position: relative;
+}
+#home p {
+    color: #DDDDFF;
+}
+#home h1 {
+    color: #DDDDFF;
+}
+.section-title {
+    border-color: #000000;
+}
+#home .section-title {
+    margin: 200px auto;
+    border-color: aliceblue;
+    border-color: #ffa400;
+}
+
+#scroller {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    color: #ffa400;
+}
+
+.scrolly {
+    width: 100%;
+    color: #ffa400;
+}
+
+#vid {
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+.smoothScroll.navbar-brand {
+    border: 3px solid white;
+    margin: 0;
+}
+
+#portfolioGrid {
+    text-align: center;
+}
+#scroller a {
+    
+}
+
+/*	.goto-next {
+		border: 0;
+		bottom: 0;
+		display: block;
+		height: 5em;
+		left: 50%;
+		margin: 0 0 0 -5em;
+		overflow: hidden;
+		position: absolute;
+		text-indent: 10em;
+		white-space: nowrap;
+		width: 10em;
+		z-index: 1;
+	}
+
+		.goto-next:before {
+			background-image: url("images/arrow.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: '';
+			display: block;
+			height: 1.5em;
+			left: 50%;
+			margin: -0.75em 0 0 -1em;
+			position: absolute;
+			top: 50%;
+			width: 2em;
+			z-index: 1;
+		}
+
+				#home .goto-next {
+					height: 7em;
+				}
+
+			.goto-next:before {
+				height: 0.8em;
+				margin: -0.4em 0 0 -0.6em;
+				width: 1.2em;
+			}*/
