@@ -1,6 +1,8 @@
+/*whole front page*/
 #home {
-    min-height: 100vh;
+    height: 100vh;
     /*background-image: url();*/
+    /*max-height: 100%;*/
     width:100%;
     position: relative;
 }
@@ -15,10 +17,11 @@
 }
 #home .section-title {
     margin: 200px auto;
-    border-color: aliceblue;
+    border-color: white;
     border-color: #ffa400;
 }
 
+/*scroll button container*/
 #scroller {
     position: relative;
     text-align: center;
@@ -44,7 +47,7 @@
 }
 
 .smoothScroll.navbar-brand {
-    border: 3px solid white;
+    border: 2px solid white;
     margin: 0;
 }
 
@@ -54,7 +57,30 @@
 #scroller a {
     
 }
+h2 small {
+    font-size: 60%;
+}
 
+#frontSection {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+#frontSection p {
+    font-size: 2em;
+    padding: 1px;
+    line-height: 1.3em;
+}
+
+#hi {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+#arrowDown {
+    font-size: 5em;
+    text-decoration: none;
+}
 /*	.goto-next {
 		border: 0;
 		bottom: 0;
@@ -95,3 +121,143 @@
 				margin: -0.4em 0 0 -0.6em;
 				width: 1.2em;
 			}*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+    #home .section-title {
+/*        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;*/
+        background-color: red;
+        height: auto;
+        margin: 130px 0 5px 0;
+        padding: 5px 0 5px 0;
+    }
+    
+    #scroller {
+        margin-top: 5px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width: 321px) and (max-width : 480px) {
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+    #home .section-title {
+/*        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;*/
+        background-color: red;
+        height: auto;
+        margin: 200px 0 5px 0;
+        padding: 5px 0 5px 0;
+    }
+    
+    #scroller {
+        margin-top: 5px;
+    }
+    
+    .grid figure {
+        
+        max-width: 100% !important;
+        margin-bottom: 20px;
+        /*background-color: red !important; */
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /*whole front page*/
+    #frontSection {
+        /*background-color: yellow;*/
+        height: 100%;
+    }
+   /* #home .section-title {
+        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;
+        background-color: yellow;
+    }*/
+}
+
+@media (min-width : 768px) {
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+   /* .grid {
+        text-align: center;
+    }*/
+    /*.effect-zoe {
+        width: auto;
+    }*/
+  /*  #home .section-title {
+        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;
+        background-color: yellow;
+    }*/
+    /*scroll button container*/
+    #scroller {
+        position: absolute;
+        text-align: center;
+        width: auto;
+        color: #ffa400;
+        bottom: 40%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+    /*scroll button container*/
+    #scroller {
+        position: relative;
+        text-align: center;
+        width: auto;
+        color: #ffa400;
+        bottom: 20%;
+    }
+    /*font page box*/
+    #home .section-title {
+        margin: 100px auto;
+        border-color: white;
+        border-color: #ffa400;
+        background-color: green;
+        height: auto;
+        margin-top: 200px;
+    }
+    #plan .plan-title {
+        font-size: 2em;
+    }
+}
+@media (min-width : 992px) {
+    #plan .plan-title {
+        font-size: 2em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    /*whole front page*/
+    #frontSection {
+        height: 100%;
+    }
+    /*font page box*/
+    #home .section-title {
+    background-color: blue;
+    height: auto;
+    margin-top: 250px;
+}
+}

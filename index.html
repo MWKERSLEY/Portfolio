@@ -19,7 +19,8 @@
 	<!-- Animate CSS-->
 	<link rel="stylesheet" href="css/animate.min.css">
 	<!-- Font Icons-->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/et-line-font.css">
 	<!-- Nivo Lightbox CSS-->
 	<link rel="stylesheet" href="css/nivo-lightbox.css">
@@ -69,11 +70,11 @@
             
 				<!-- <li><a href="#home" class="smoothScroll">HOME</a></li> -->
                 
-				<li><a href="#work" class="smoothScroll">WORK</a></li>
+				<li><a href="#work" class="smoothScroll">ABOUT ME</a></li>
 				<!--<li><a href="#about" class="smoothScroll">ABOUT</a></li>-->
-				<li><a href="#team" class="smoothScroll">TEAM</a></li>
+				<!--<li><a href="#team" class="smoothScroll">TEAM</a></li>-->
 				<li><a href="#portfolio" class="smoothScroll">PROJECTS</a></li>
-				<li><a href="#plan" class="smoothScroll">PLANS</a></li>
+				<li><a href="#plan" class="smoothScroll">EXPERIENCE</a></li>
 				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
 			</ul>
 		</div>
@@ -98,8 +99,8 @@
                 </div>
 </div>-->
 <section id="home">
-<video id="vid" autoplay loop muted>
-    <source src="video/London.mp4" type="video/mp4">
+<video id="vid" autoplay loop muted poster="images/london.jpg">
+    <source src="video/LondonShort.mp4" type="video/mp4">
     <!--<source src="movie.ogg" type="video/ogg">-->
     Your browser does not support the video tag.
 </video>
@@ -107,15 +108,15 @@
 		<div class="row">
             
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-                <div class="section-title">
-                    <h5 class="wow bounceIn">Hi!</h5>
+                <div class="section-title" id="frontSection">
+                    <h5 class="wow bounceIn" id="hi">Hi!</h5>
                     <h1 class="heading">I'm Matt</h1>
 					<hr>
-                    <p>I'm a C# Developer.<br>
-							With lots of other skills too.</p>
+                    <p>I'm a C# Developer,<br/>
+							with lots of other skills too.</p>
                 </div>
                 <div id="scroller">
-                    <a href="#work" class="scrolly">Next</a>
+                    <a href="#work" class="scrolly"><i id="arrowDown" class="fa fa-angle-down"></i></a>
                 </div>
                 
             </div>
@@ -133,7 +134,7 @@
 					<h5 class="wow bounceIn">PERSONAL DESCRIPTION</h5>
 					<h1 class="heading">WHO AM I?</h1>
 					<hr>
-					<p>Here are some of my most outstanding soft skills.</p>
+					<p>Here are some of my most outstanding attributes.</p>
 				</div>
 			</div>
 
@@ -143,38 +144,39 @@
 			<div id="owl-work" class="owl-carousel">
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-					<i class="icon-tools medium-icon"></i>
-						<h3>SOCIAL MEDIA</h3>
+					<i class="icon-puzzle medium-icon"></i>
+						<h3>PROBLEM SOLVING</h3>
 						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>Top-of-the-class maths and logic skill allow me to come up with the best solutions to any problem that comes my way.</p>
 				</div>
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-					<i class="icon-tablet medium-icon"></i>
-						<h3>TRIP PLANNING</h3>
+					<i class="icon-briefcase medium-icon"></i>
+						<h3>WORK ETHIC</h3>
 						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>If a job is worth doing, it's worth doing well.<br/>And anything that can help productivity is a job worth doing.</p>
 				</div>
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-					<i class="icon-bike medium-icon"></i>
-						<h3>WEB MARKETING</h3>
+					<i class="icon-lightbulb medium-icon"></i>
+						<h3>INITIATIVE</h3>
 						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>From improving data entry templates to designing new game modifications in my spare time, I take the initiative to look into new ways of doing things.</p>
 				</div>
 
-				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-					<i class="icon-flag medium-icon"></i>
-						<h3>EXPLORING PLACES</h3>
+				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
+					<i class="icon-clock medium-icon"></i>
+						<h3>ORGANISATION</h3>
 						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>A succession of demanding jobs has taught me the need to keep on top of your priorites. Planning and preparation are key.</p>
 				</div>
 
-				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-					<i class="icon-basket medium-icon"></i>
-						<h3>RECREATIONS</h3>
+				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
+					<i class="icon-desktop medium-icon"></i>
+						<h3>LANGUAGES</h3>
 						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>C#/ASP.NET is just the beginning.<br/>I've used Javascript, HTML/CSS,  SQL, Java, R, Matlab in my studies, VB, PressTalk at work and Python, SQF, C++ for fun!
+                    </p>
 				</div>
 
 			</div>
@@ -374,84 +376,84 @@
 				</div>
 			</div>
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-12">
 				<div class="grid">
               		<figure class="effect-zoe">
 						<img src="images/portfolio-img1.jpg" alt="portfolio img"/>
 							<figcaption>
 								<h2>E-Commerce</h2>
 								<p class="icon-links">
-									<a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+									<a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><!--<span class="icon icon-attachment"></span>--></a>
 								</p>
 							</figcaption>			
 					</figure>
 				</div>
             </div>   
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-12">
 				<div class="grid">
               		<figure class="effect-zoe">
 						<img src="images/portfolio-img2.jpg" alt="portfolio img"/>
 							<figcaption>
 								<h2>Lottery Simulator</h2>
 								<p class="icon-links">
-									<a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+									<a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><!--<span class="icon icon-attachment"></span>--></a>
 								</p>
 							</figcaption>			
 					</figure>
 				</div>
             </div> 
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-12">
 				<div class="grid">
               		<figure class="effect-zoe">
 						<img src="images/portfolio-img3.jpg" alt="portfolio img"/>
 							<figcaption>
 								<h2>Maths Database</h2>
 								<p class="icon-links">
-									<a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+									<a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><!--<span class="icon icon-attachment"></span>--></a>
 								</p>
 							</figcaption>			
 					</figure>
 				</div>
             </div> 
           	
-          	<div class="col-md-4 col-sm-6">
+          	<div class="col-md-4 col-sm-12">
 				<div class="grid">
               		<figure class="effect-zoe">
 						<img src="images/portfolio-img4.jpg" alt="portfolio img"/>
 							<figcaption>
 								<h2>Quiz Website</h2>
 								<p class="icon-links">
-									<a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+									<a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><!--<span class="icon icon-attachment"></span>--></a>
 								</p>
 							</figcaption>			
 					</figure>
 				</div>
             </div> 
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-12">
 				<div class="grid">
               		<figure class="effect-zoe">
 						<img src="images/portfolio-img5.jpg" alt="portfolio img"/>
 							<figcaption>
 								<h2>Are You Smarter Than A Chimp?</h2>
 								<p class="icon-links">
-									<a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+									<a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><!--<span class="icon icon-attachment"></span>--></a>
 								</p>
 							</figcaption>			
 					</figure>
 				</div>
             </div> 
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-12">
 				<div class="grid">
               		<figure class="effect-zoe">
 						<img src="images/portfolio-img6.jpg" alt="portfolio img"/>
 							<figcaption>
 								<h2>Landscape Gardener Website</h2>
 								<p class="icon-links">
-									<a href="images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><span class="icon icon-attachment"></span></a>
+									<a href="images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><!--<span class="icon icon-attachment"></span>--></a>
 								</p>
 							</figcaption>			
 					</figure>
@@ -486,61 +488,70 @@
 					<h5 class="wow bounceIn">UNI AND WORK</h5>
 					<h1 class="heading color-white">EXPERIENCE</h1>
 					<hr>
-					<p class="color-white">My main jobs and qualifications.</p>
+					<p class="color-white">My jobs and qualifications.</p>
 				</div>
 			</div>
 
 			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
 				<div class="plan">
-					<h2 class="plan-title">Villager</h2>
-					<div class="plan-price">
-						<h1 class="plan-price-title">$500 / <small>trip</small></h1>
-					</div>
+					<h2 class="plan-title">BSc Mathematics<br/><small>University of Bath</small></h2>
 					<ul class="plan-list">
-						<li>4 days 3 nights</li>
-						<li>Explore Forest</li>
-						<li>Visit Waterfalls</li>
-						<li>Group of 10 people</li>
+                        <li>Rigorous mindset developed</li>
+                        <li>Enhanced logical and mathematical skills</li>
+						<li>Computer science modules also taken, including Java, 2:1 equivalent grade across these 6 modules</li>
+						<li>Graduated 2010</li>
 					</ul>
-					<div class="plan-button">
-						<button class="btn btn-default">CHOOSE PLAN</button>
-					</div>
 				</div>
 			</div>
 
 			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
 				<div class="plan">
-					<h2 class="plan-title">Tourer</h2>
-					<div class="plan-price">
-						<h1 class="plan-price-title">$800 / <small>trip</small></h1>
-					</div>
+					<h2 class="plan-title">Customer Assistant<br/><small>Sainsbury's</small></h2>
 					<ul class="plan-list">
-						<li>8 days 7 nights</li>
-						<li>Explore Mountains</li>
-						<li>Touring Villages</li>
-						<li>Group of 15 people</li>
+                        <li>Developed customer service skills</li>
+                        <li>Friendly/calm customer support</li>
+                        <li>Busiest Sainsbury's in the country. Had to work fast and efficiently!</li>
+                        <li>Joined in 2011</li>
 					</ul>
-					<div class="plan-button">
-						<button class="btn btn-default">CHOOSE PLAN</button>
-					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+				<div class="plan">
+					<h2 class="plan-title">Procurement Analyst<br/><small>NUS Consulting</small></h2>
+					<ul class="plan-list">
+						<li>Analysis of quotes and broker negotiation</li>
+						<li>Daily management of SME business and occationally large companies</li>
+                        <li>Deliver reports to management and suppliers to demanding schedules</li>
+						<li>Junior member in team of 3</li>
+                        <li>Quickly given responsibility for some of the most demanding projects, performed to record standards</li>
+                        <li>Joined in 2012</li>
+					</ul>
 				</div>
 			</div>
 
 			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
 				<div class="plan">
-					<h2 class="plan-title">Explorer</h2>
-					<div class="plan-price">
-						<h1 class="plan-price-title">$1,400 / <small>trip</small></h1>
-					</div>
+					<h2 class="plan-title">Production Assistant<br/><small>Priority Pass</small></h2>
 					<ul class="plan-list">
-						<li>12 days 11 nights</li>
-						<li>Multiple Cities</li>
-						<li>Unique Experiences</li>
-						<li>Group of 20 people</li>
+						<li>Created and administered automated data workflows, using software and scripts</li>
+						<li>One-Off projects to produce large print outputs from unmanaged datasets</li>
+						<li>Responsible for document and card production, often including 1000s of daily packs worth £100k+/day</li>
+						<li>Employed 2013 - 2016</li>
 					</ul>
-					<div class="plan-button">
-						<button class="btn btn-default">CHOOSE PLAN</button>
-					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
+				<div class="plan">
+					<h2 class="plan-title">Developers Programme<br/><small>JustIT</small></h2>
+					<ul class="plan-list">
+						<li>C#, ASP.NET Webforms/MVC</li>
+						<li>Javascript, HTML/CSS</li>
+						<li>IT Employment Preparation</li>
+                        <li>Back-End Examinations</li>
+						<li>Started 2017</li>
+					</ul>
 				</div>
 			</div>
 
@@ -562,7 +573,7 @@
 					<h5 class="wow bounceIn">HIRE ME NOW</h5>
 					<h1 class="heading">CONTACT ME</h1>
 					<hr>
-					<p>Contact me here, or see details below.</p>
+					<p>Post a message, or see details just below.</p>
 				</div>
 			</div>
 
@@ -619,8 +630,8 @@
 					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
 					<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
 					<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="1s"></a></li>-->
-					<li><a href="#" class="fa fa-github wow fadeIn" data-wow-delay="1.3s"></a></li>
-					<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="1.6s"></a></li>
+					<li><a href="" class="fa fa-github wow fadeIn" data-wow-delay="1.3s"></a></li>
+					<li><a href="" class="fa fa-linkedin wow fadeIn" data-wow-delay="1.6s"></a></li>
 				</ul>
 
 			</div>
@@ -634,17 +645,17 @@
     
 
 <!-- Scripts -->
-<!--<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>-->
-<!--<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
 <script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>-->
+<script src="assets/js/main.js"></script>
 
     
     
-<script src="js/jquery.js"></script>
+<!--<script src="js/jquery.js"></script>-->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/nivo-lightbox.min.js"></script>

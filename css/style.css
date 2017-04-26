@@ -142,7 +142,7 @@ hr {
 .sk-rotating-plane {
   width: 40px;
   height: 40px;
-  background-color: #9e6500;
+  background-color: #ffa400;
   -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
           animation: sk-rotatePlane 1.2s infinite ease-in-out; }
 
@@ -187,7 +187,7 @@ hr {
 }
 
 .custom-navbar .navbar-brand .navbar-toggle {
-    background: #9e6500;
+    background: #ffa400;
      padding: 4px 6px;
     font-size: 16px;
     color: #fff;
@@ -224,7 +224,7 @@ hr {
     border: none;
 }
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #9e6500;
+    background: #ffa400;
     border-color: transparent;
 }
 
@@ -338,7 +338,7 @@ hr {
 .bx-controls-direction a {
   width: 40px;
   height: 40px;
-  background-color: #9e6500;
+  background-color: #ffa400;
   text-decoration: none;
   display: block;
   float: left;
@@ -609,7 +609,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 #plan .plan:hover {
   background: #000000;
-  border-color: #9e6500;
+  border-color: #ffa400;
 }
 
 #plan .plan-title {
@@ -666,7 +666,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 #contact .form-control:focus {
-  border-color: #9e6500;
+  border-color: #ffa400;
 }
 
 #contact input {
@@ -748,7 +748,6 @@ footer h2 {
   background: #000000;
   color: #ffffff;
 }
-
 
 /*------------------------------------------------------
   RESPONSIVE STYLES 
