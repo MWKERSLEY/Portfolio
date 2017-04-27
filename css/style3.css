@@ -6,21 +6,40 @@
     width:100%;
     position: relative;
 }
+/*hi*/
+.contact-detail {
+    margin-top: -130px;
+}
+.contactMe {
+    margin-bottom: 0 !important;
+}
+#hi {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 4px 12px #000000;
+}
+/*im a c# guy*/
 #home p {
     color: #DDDDFF;
+    text-shadow: 2px 4px 12px #000000;
 }
+/*im matt*/
 #home h1 {
     color: #DDDDFF;
+    text-shadow: 2px 4px 12px #000000;
 }
 .section-title {
     border-color: #000000;
 }
 #home .section-title {
-    margin: 200px auto;
+    margin: 200px auto 50px auto;
     border-color: white;
     border-color: #ffa400;
 }
-
+#work p {
+    font-size: 1.3em;
+}
 /*scroll button container*/
 #scroller {
     position: relative;
@@ -28,13 +47,23 @@
     margin: auto;
     width: 200px;
     color: #ffa400;
+    margin-top: 0;
 }
-
+.modal-body {
+    background-color: rgba(255,255,255,0.6) !important;
+    position: relative;
+}
+.projectDetails div {
+    float: left;
+}
+.projectPic {
+    position: absolute;
+    right: 0;
+}
 .scrolly {
     width: 100%;
     color: #ffa400;
 }
-
 #vid {
   position: absolute;
   right: 0; 
@@ -71,15 +100,17 @@ h2 small {
     line-height: 1.3em;
 }
 
-#hi {
-    font-size: 3em;
-    margin: 0;
-    padding: 0;
-}
-
 #arrowDown {
     font-size: 5em;
     text-decoration: none;
+}
+
+.projectElement {
+    min-height: 350px;
+}
+
+.projectElement img {
+    min-height: 300px;
 }
 /*	.goto-next {
 		border: 0;
@@ -125,7 +156,10 @@ h2 small {
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
+@media (max-width : 320px) {
+    .projectPic {
+        display: none;
+    }
     /*whole front page*/
     #frontSection {
         height: 100%;
@@ -134,19 +168,38 @@ h2 small {
 /*        margin: 100px auto;
         border-color: white;
         border-color: #ffa400;*/
-        background-color: red;
+        /*background-color: red;*/
         height: auto;
         margin: 130px 0 5px 0;
         padding: 5px 0 5px 0;
     }
-    
+    .modal {
+        overflow: scroll !important;
+    }
+    .modal p {
+        font-size: 1em !important;
+    }
+    .modal h1,.modal h2,.modal h3,.modal h4,.modal h5,.modal h6 {
+        margin: 5px !important;
+        padding: 3px !important;
+    }
     #scroller {
         margin-top: 5px;
+    }
+    #plan .plan-title {
+        font-size: 1.5em;
+    }
+    .plan {
+        width:275px !important;
+        padding: 20px !important;
     }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width: 321px) and (max-width : 480px) {
+    .projectPic {
+        display: none;
+    }
     /*whole front page*/
     #frontSection {
         height: 100%;
@@ -155,7 +208,7 @@ h2 small {
 /*        margin: 100px auto;
         border-color: white;
         border-color: #ffa400;*/
-        background-color: red;
+        /*background-color: red;*/
         height: auto;
         margin: 200px 0 5px 0;
         padding: 5px 0 5px 0;
@@ -171,10 +224,25 @@ h2 small {
         margin-bottom: 20px;
         /*background-color: red !important; */
     }
+    #plan .plan-title {
+        font-size: 2em;
+    }
+    .modal {
+        overflow: scroll !important;
+    }
+    .modal p {
+        font-size: 1em !important;
+    }
+    .modal h1,.modal h2,.modal h3,.modal h4,.modal h5,.modal h6 {
+        margin: 5px !important;
+        padding: 3px !important;
+    }
 }
 
+
+
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media (min-width: 481px) and (max-width : 767px) {
     /*whole front page*/
     #frontSection {
         /*background-color: yellow;*/
@@ -188,7 +256,7 @@ h2 small {
     }*/
 }
 
-@media (min-width : 768px) {
+@media (min-width: 768px) and (max-width : 991px) {
     /*whole front page*/
     #frontSection {
         height: 100%;
@@ -206,17 +274,17 @@ h2 small {
         background-color: yellow;
     }*/
     /*scroll button container*/
-    #scroller {
+/*    #scroller {
         position: absolute;
         text-align: center;
         width: auto;
         color: #ffa400;
         bottom: 40%;
-    }
+    }*/
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media (min-width: 992px) and (max-width : 1200px) {
     /*whole front page*/
     #frontSection {
         height: 100%;
@@ -234,7 +302,7 @@ h2 small {
         margin: 100px auto;
         border-color: white;
         border-color: #ffa400;
-        background-color: green;
+        /*background-color: green;*/
         height: auto;
         margin-top: 200px;
     }
@@ -242,21 +310,16 @@ h2 small {
         font-size: 2em;
     }
 }
-@media (min-width : 992px) {
-    #plan .plan-title {
-        font-size: 2em;
-    }
-}
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media (min-width : 1201px) {
     /*whole front page*/
     #frontSection {
         height: 100%;
     }
     /*font page box*/
     #home .section-title {
-    background-color: blue;
+    /*background-color: blue;*/
     height: auto;
     margin-top: 250px;
 }
